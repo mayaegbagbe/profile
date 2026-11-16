@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Maya Egbagbe | Web Developer</title>
+<meta name="description" content="Portfolio of Maya Egbagbe, a web developer who builds friendly, responsive websites.">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-bar">
+    <a class="logo-mobile" href="index.html">m.</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="index.html#top">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="notch"><a class="logo" href="index.html">m.</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Hi, I’m Maya</h1>
+        <h2 class="grad">Web Developer.</h2>
+        <!-- TODO: rewrite this in your own words -->
+        <p>I’m a Computer Science student at Pan-Atlantic University. I like building friendly, responsive websites and apps that are easy to use.</p>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+      <div class="portrait-wrap">
+        <!-- TODO: add your photo as images/maya.jpg (or delete the img line to keep the big "M") -->
+        <div class="portrait"><span>M</span><img src="images/maya.jpg" alt="Photo of Maya Egbagbe" onerror="this.remove()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2 class="section-title grad">About</h2>
+      <p>I’m Maya Egbagbe, a Computer Science student focused on web development. I enjoy turning a blank page into something people actually like using, and I care about clean code and layouts that work on every screen.</p>
+      <p>I’ve built a mobile app, a lab management system and a library manager, and I’m getting ready to dive deeper into mobile and blockchain development.</p>
+      <ul class="skills" aria-label="Skills">
+        <li title="HTML">HTML</li><li title="CSS">CSS</li><li title="JavaScript">JS</li><li title="TypeScript">TS</li><li title="React Native">RN</li><li title="Java">Java</li><li title="C++">C++</li><li title="PostgreSQL">SQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="wrap">
+      <div class="orbit" aria-hidden="true"><span>m</span></div>
+      <h2 class="section-title grad">Recent Work</h2>
+      <p class="section-sub">A collection of projects I’ve worked on.</p>
+
+      <article class="feature">
+        <div class="shot"><span>screenshot coming soon</span><img src="images/project-1.png" alt="Screenshot of the Sante Lab System dashboard" onerror="this.remove()"></div>
+        <div class="info">
+          <p class="label">Featured project</p>
+          <h3>Sante Lab System</h3>
+          <div class="info-box"><p>A desktop app for a diagnostics lab where patients order tests, staff track samples, and results are checked before they’re released.</p></div>
+          <ul class="tags"><li>Java</li><li>JavaFX</li><li>PostgreSQL</li><li>Maven</li></ul>
+          <div class="links">
+            <a href="project.html">Read the story</a>
+            <a href="https://github.com/mayaegbagbe/sante-lims" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="shot"><img src="images/project-2.png" alt="Screenshot of Chef Maria’s customer profile screen" onerror="this.remove()"></div>
+        <div class="info">
+          <p class="label">Featured project</p>
+          <h3>Chef Maria’s Restaurant App</h3>
+          <div class="info-box"><p>A mobile app for a restaurant where customers fill in their profile before placing an order.</p></div>
+          <ul class="tags"><li>React Native</li><li>Expo</li><li>TypeScript</li></ul>
+          <div class="links">
+            <a href="https://github.com/mayaegbagbe/chefmaria-app" target="_blank" rel="noopener">GitHub</a>
+            <!-- TODO: once you deploy the web version, add: <a href="YOUR-LIVE-LINK" target="_blank" rel="noopener">Live app</a> -->
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="shot"><img src="images/project-3.png" alt="Screenshot of the Library Manager menu in the terminal" onerror="this.remove()"></div>
+        <div class="info">
+          <p class="label">Featured project</p>
+          <h3>Library Manager</h3>
+          <div class="info-box"><p>A terminal library system that issues and returns books and tracks overdue loans, built on AVL trees, queues and stacks.</p></div>
+          <ul class="tags"><li>C++</li><li>AVL trees</li><li>Queues</li></ul>
+          <div class="links">
+            <a href="https://github.com/mayaegbagbe/library-management-system" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2 class="section-title grad">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Drop me a message</h3>
+          <p>Have a project, an internship, or just want to say hi? My inbox is open.</p>
+          <ul class="contact-list">
+            <li><span class="ico" aria-hidden="true">&#9993;</span><a href="mailto:mayaegbabge@gmail.com">mayaegbabge@gmail.com</a></li>
+            <li><span class="ico" aria-hidden="true">&#9742;</span><a href="tel:+2348137206926">+234 813 720 6926</a></li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="mailto:mayaegbabge@gmail.com">Email me</a>
+            <a class="btn ghost" href="https://wa.me/2348137206926" target="_blank" rel="noopener">WhatsApp me</a>
+          </div>
+        </div>
+        <form id="contact-form" class="card" data-email="mayaegbabge@gmail.com">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Maya Egbagbe. All rights reserved.</p>
+    <a href="https://github.com/mayaegbagbe" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

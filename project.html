@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Sante Lab System | Maya Egbagbe</title>
+<meta name="description" content="Case study of the Sante Lab System, a lab management desktop app by Maya Egbagbe.">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-bar">
+    <a class="logo-mobile" href="index.html">m.</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="index.html#top">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="notch"><a class="logo" href="index.html">m.</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- DRAFT: I wrote this from your code. Read it and edit anything that is not true to your experience. -->
+  <section class="detail-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#work">&larr; Back to projects</a>
+      <p class="label">Featured project</p>
+      <h1 class="grad">Sante Lab System</h1>
+      <p>A desktop app that follows a lab test from the patient’s order to a verified result.</p>
+      <a class="btn" href="https://github.com/mayaegbagbe/sante-lims" target="_blank" rel="noopener">View source code</a>
+    </div>
+  </section>
+
+  <div class="wrap detail-body">
+    <div class="card">
+      <h2>About this project</h2>
+      <p>Sante Lab System (Sante LIMS) is a desktop app for a diagnostics lab. It has three kinds of users: patients, lab attendants and admins. Patients order tests, pay by bank transfer and download their results from a private vault. Attendants confirm payments, move each sample through the lab, upload results and release them. Admins manage users and the test catalogue and can see a full audit trail.</p>
+    </div>
+    <div class="card">
+      <h2>The problem</h2>
+      <p>In a lab, a lot can go wrong between a patient ordering a test and getting a result: payments get lost, samples are hard to track, results reach the wrong person, and nobody can say who changed what. I wanted one place where a patient can order and follow a test, the lab can track every sample, a result is checked before it goes out, and every action is recorded.</p>
+    </div>
+    <div class="card">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li>Three roles (patient, lab attendant, admin), each with its own dashboard</li>
+        <li>Patients can create their own account or have one made for them</li>
+        <li>Temporary passwords that must be changed on first sign-in</li>
+        <li>Online test ordering with bank-transfer payment details</li>
+        <li>Attendants confirm payments, then track each sample through the lab</li>
+        <li>Result upload, then review and approval before release</li>
+        <li>A private result vault where patients download their results</li>
+        <li>Admin tools to manage users and the test catalogue</li>
+        <li>An audit trail of every action that can’t be edited or deleted</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <figure><div class="shot"><img src="images/sante-lab-1.png" alt="Sante Lab System sign-in screen" onerror="this.remove()"></div><figcaption>Sign-in screen</figcaption></figure>
+        <figure><div class="shot"><img src="images/sante-lab-2.png" alt="Admin overview showing totals and recent activity" onerror="this.remove()"></div><figcaption>Admin overview with recent activity from the audit trail</figcaption></figure>
+        <figure><div class="shot"><img src="images/sante-lab-3.png" alt="Lab attendant test request queue with payment status" onerror="this.remove()"></div><figcaption>Lab attendant test request queue</figcaption></figure>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Technologies used</h2>
+      <ul class="tags"><li>Java 17</li><li>JavaFX</li><li>FXML</li><li>PostgreSQL</li><li>JDBC</li><li>Maven</li><li>BCrypt</li><li>Jakarta Mail</li></ul>
+    </div>
+    <div class="card">
+      <h2>What I learned</h2>
+      <p>This was my biggest project so far. I learned to organise a larger app into models, DAOs, services and controllers so each part has one job. I learned how to connect Java to a PostgreSQL database with JDBC, how to store passwords safely by hashing them with BCrypt instead of saving them as plain text, and how to design different screens and permissions for different roles. Building the audit trail taught me to think about accountability, not just features. If I did it again, I would keep the database password out of the source code from day one.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Maya Egbagbe. All rights reserved.</p>
+    <a href="https://github.com/mayaegbagbe" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
